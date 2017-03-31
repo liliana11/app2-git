@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Segunda aplicación</title>
+
+		<!--grupo CSS-->
+		<link rel="stylesheet" href="css/tema-app1.min.css"/>
+		<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+		<!--grupo JavaScript-->
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/acciones.js"></script>
+		<script src="phonegap.js"></script>
+		<script type="text/javascript">
+		
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+        </script>
+        <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+	</head>
+
+	<body onLoad="MM_preloadImages('imagenes/samsung.jpg','imagenes/xperia.png','imagenes/Motorola1.png','imagenes/samsung2.png','imagenes/baja1.png','imagenes/alta1.png','imagenes/1.1.jpg','imagenes/3.3.png','imagenes/2.2.png','imagenes/nokia1.png','imagenes/s72.png','imagenes/moto2.png','imagenes/nextl.png','imagenes/unefon.png','imagenes/iusacell.png','imagenes/movi.png','imagenes/inventor.png','imagenes/media2.png')">
+
+		<div data-role="page" id="Principal" data-theme="a">
+			<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 		data-back-btn-theme="b">
+				<h1>Telefonia celular</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				<div data-role="collapsible" data-content-theme="false">
+					<h1>MOTOROLA X STYLE</h1>
+					<div>
+					<p>Esta es la imagen del celular: </p>
+					<br>
+				</div>
+				<div>
+                  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('moto1','','imagenes/Motorola1.png',1)"><img src="imagenes/motorola2.png" width="100%" height="100%" id="moto1"></a> </div>
+			</div>
+		</div>
+		<div>
+        
+        </div>
+			<div data-role="main" class="ui-content">
+				<div data-role="collapsible" data-content-theme="false">
+					<h1>SAMSUNG S7</h1>
+					<div>
+					<p>Esta es la imagen del celular: </p>
+					<br>
+				</div>
+				<div>
+                  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('samsung','','imagenes/samsung2.png',1)"><img src="imagenes/samsung1.png" width="100%" height="100%" id="samsung"></a> </div>
+			</div>
+		</div>
+		<div>
+			<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+				<li class="ui-first-child ui-last-child">
+					<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+					<h2>Definición de Teléfono Celular</h2>
+					<p>Muestra la definición del un teléfono celular</p>
+					</a>
+				</li>
+                
+				<li class="ui-first-child ui-last-child">
+					<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+						<h2>Historia del la telefonia celular</h2>
+						<p>Se muestra la historia de como fue evolucionando la telefonia celular</p>
+					</a>
+				</li>
+				<li class="ui-first-child ui-last-child">
+					<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+						<h2>Clasificación de los celulares</h2>
+						<p>Muestra los celulares de gama alta, media y baja.</p>
+					</a>
+				</li>
+				<li class="ui-first-child ui-last-child">
+					<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+						<h2>Compañias que ofrecen el servicio de telefonia celular en mexico.</h2>
+						<p>Muestra las compañias que ofrecen servicio en Mexico</p>
+					</a>
+				</li>
+			</ul>
+            <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/2.2.png" alt="2.2" title="2.2" id="wows1_0"/></li>
+		<li><img src="data1/images/2.png" alt="2" title="2" id="wows1_1"/></li>
+		<li><img src="data1/images/3.png" alt="3" title="3" id="wows1_2"/></li>
+		<li><img src="data1/images/alta1.png" alt="alta1" title="alta1" id="wows1_3"/></li>
+		<li><img src="data1/images/alta2.png" alt="alta2" title="alta2" id="wows1_4"/></li>
+		<li><img src="data1/images/media1.png" alt="media1" title="media1" id="wows1_5"/></li>
+		<li><img src="data1/images/moto1.jpg" alt="moto1" title="moto1" id="wows1_6"/></li>
+		<li><img src="data1/images/moto2.png" alt="moto2" title="moto2" id="wows1_7"/></li>
+		<li><img src="data1/images/motorola1.png" alt="Motorola1" title="Motorola1" id="wows1_8"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/samsung1.png" alt="image slider" title="samsung1" id="wows1_9"/></a></li>
+		<li><img src="data1/images/samsung2.png" alt="samsung2" title="samsung2" id="wows1_10"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="2.2"><span><img src="data1/tooltips/2.2.png" alt="2.2"/>1</span></a>
+		<a href="#" title="2"><span><img src="data1/tooltips/2.png" alt="2"/>2</span></a>
+		<a href="#" title="3"><span><img src="data1/tooltips/3.png" alt="3"/>3</span></a>
+		<a href="#" title="alta1"><span><img src="data1/tooltips/alta1.png" alt="alta1"/>4</span></a>
+		<a href="#" title="alta2"><span><img src="data1/tooltips/alta2.png" alt="alta2"/>5</span></a>
+		<a href="#" title="media1"><span><img src="data1/tooltips/media1.png" alt="media1"/>6</span></a>
+		<a href="#" title="moto1"><span><img src="data1/tooltips/moto1.jpg" alt="moto1"/>7</span></a>
+		<a href="#" title="moto2"><span><img src="data1/tooltips/moto2.png" alt="moto2"/>8</span></a>
+		<a href="#" title="Motorola1"><span><img src="data1/tooltips/motorola1.png" alt="Motorola1"/>9</span></a>
+		<a href="#" title="samsung1"><span><img src="data1/tooltips/samsung1.png" alt="samsung1"/>10</span></a>
+		<a href="#" title="samsung2"><span><img src="data1/tooltips/samsung2.png" alt="samsung2"/>11</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider.com</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+		</div>
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+         	<div>
+            	<img src="imagenes/logo.png" width="80" height="80">
+            </div>
+            <div>
+            	<h4>Aplicacion Dos</h4>
+                <h4>Liliana Hernandez Ramos</h4>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+            	<h1>DEFINICION</h1>
+                  </div>
+                  <div>
+ <p align="justify"> 
+ Dispositivo electrónico que permite realizar múltiples operaciones de forma inalámbrica en cualquier lugar donde tenga señal. Entre las múltiples operaciones se incluyen la realización de llamadas telefónicas, navegación por internet, envío de mensajes de texto (SMS), captura de fotos y sonidos, reloj, agenda, realización de pagos, etc.</p>
+ </div>
+    <div data-role="content" align="center">
+            <div data-role="collapsible" data-content-theme="false">
+             <h1>Teléfono Celular Uno </h1>
+           <div>
+           	 <div>
+                <h2>1.Nokia</h2>
+                </div>
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/nokia1.png',1)"><img src="imagenes/nokia.png" width="100%" height="100%" id="Image11"></a> </div>
+            </div>
+           <div data-role="content" align="center">
+            <div data-role="collapsible" data-content-theme="false">
+             <h1>Teléfono Celular dos </h1>
+           <div>
+           	 <div>
+                	<h2>2.Samsumg galay s7</h2>
+                </div>
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/s72.png',1)"><img src="imagenes/s71.png" width="100%" height="100%" id="Image12"></a> </div>
+                
+            </div>
+            </div>
+      <div data-role="content" align="center">
+            <div data-role="collapsible" data-content-theme="false">
+             <h1>Teléfono Celular tres </h1>
+           <div>
+            	<div>
+                	<h2>3.Motorola Z play</h2>
+               
+                </div>
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/moto2.png',1)"><img src="imagenes/moto1.jpg" width="100%" height="100%" id="Image13"></a> </div>
+                
+            </div>
+            </div>
+      </div>
+            <div data-role="footer" data-theme="a" data-position="fixed">
+            	<h4>Aplicacion Dos,LHR</h4>
+            </div>
+        </div>
+        
+        
+	<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+            	<h1>Historia de la telefonía celular</h1>
+            </div>
+            <p align="justify"> 
+El primer antecedente técnico de la telefonía móvil fueron los servicios de comunicación públicos de radiotelefonía establecidas en algunas ciudades estadounidenses durante los años 1940. Usaba un único transmisor y ofrecía seis canales de transmisión, la popularidad del servicio hizo que rápidamente quedara bloqueado, pero en 1947 AT&T dio con la solución, en lugar de utilizar un único transmisor, creó una red de transmisores de baja potencia, cada uno para un área concreta o "célula" (de ahí derivó el término teléfono celular que en muchos países es la forma de referirse a la telefonía móvil).
+
+        </p>
+        <div data-role="content" align="center">
+            <div data-role="collapsible" data-content-theme="false">
+             <h1>Creador del Telefono Celular </h1>
+           <div>
+           	 <div>
+                	 <h2>Martin Cooper</h2>
+       <p align="justify">El teléfono móvil fue inventado el 17 de octubre de 1973por el ingeniero Martin Cooper, cuando trabajaba en Motorola. El primer teléfono móvil, llamado Dyna-Trac, pesaba alrededor 1 kilogramo y su batería duraba unos 35 minutos. </p>
+                </div>
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('inventor','','imagenes/inventor.png',1)"><img src="imagenes/inventor1.png" width="100" height="100" id="inventor"></a> </div>
+            </div>
+            </div>
+            
+            <div data-role="content" align="center">
+            <div data-role="collapsible" data-content-theme="false">
+             <h1>Teléfono Celular de la primera generación</h1>
+           <div>   	
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','imagenes/1.1.jpg',1)"><img src="imagenes/1.jpg" width="100%" height="100%" id="Image2"></a> </div>
+                
+            </div>
+            </div>
+            <div data-role="content" align="center">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Teléfono Celular de la segunda generación</h1>
+
+           <div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/2.2.png',1)"><img src="imagenes/2.png" width="100%" height="100%" id="Image3"></a> </div>
+      </div>
+      </div>
+      <div data-role="content" align="center">
+            <div data-role="collapsible" data-content-theme="false">
+             <h1>Teléfono Celular de nuestra generación</h1>
+           <div>
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/3.3.png',1)"><img src="imagenes/3.png" width="100%" height="100%" id="Image4"></a> </div>  
+            </div>
+          </div>
+   
+    <div data-role="footer" data-theme="a" data-position="fixed">
+            	<h4>Aplicacion Dos, LHR</h4>
+      </div>
+    </div>
+       </div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+       <h1> CLASIFICACIÓN: </h1>
+  </div>  
+     <div align="center">
+       <h2>Clasificacion por gamas de telefonos celulares: </h2>
+     </div>
+    <div data-role="content" align="center">
+        <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Gama Alta</h1>
+           <div>
+           <div>
+           <p align="justify"> Aquí se ubican los mejores, puedes hasta lavarte los dientes con ellos (es broma), se distinguen por sus exquisitas especificaciones pero no necesariamente representan una mejor experiencia al usarlos si no se elige con cuidado.
+
+Los mejores avances tecnológicos pueden aparecer en está gama para luego ser heredados con el tiempo a la gama media en menor medida.</p>
+           </div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('alta','','imagenes/alta1.png',1)"><img src="imagenes/alta2.png" width="100%" height="100%" id="alta"></a> </div>
+         </div>
+       </div>
+         <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Gama Media </h1>
+             <div>
+  <p align="justify"> Aquí se ubican los SmartPhones algunos dispositivos de marcas asiáticas, dispositivos devaluados por el tiempo que tienen en el mercado (puede ser engañoso) y las propuestas conservadoras en especificaciones de marcas reconocidas que pueden hacer mucho pero no tanto.</p>
+           </div>
+             
+           <div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('media','','imagenes/media2.png',1)"><img src="imagenes/media1.png" width="715" height="369" id="media"></a> </div>
+         </div>
+          <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Gama Baja</h1>
+       <div>
+  <p align="justify">En está categoría entran desde marcas chinas, imitaciones de gama media o alta hasta terminales obsoletos con muy pocas excepciones (Ej: el nokia n8 es una reliquia de colección pero su cámara es muy adelantada para cuando fue lanzado al mercado).</p>
+       </div>
+           <div>
+  
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('baja','','imagenes/baja1.png',1)"><img src="imagenes/baja2.png" width="100%" height="100%" id="baja"></a> </div>
+         </div>
+         </div>
+            <div data-role="footer" data-theme="a" data-position="fixed">
+            	<h4>Aplicacion Dos,LHR</h4>
+            </div>
+    </div>
+    </div>
+        
+	<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+            	<h1>COMPAÑIAS</h1>
+            </div>
+            <div data-role="content" align="center">
+            	<div>
+                	<h2>Compañias que ofrecen servicio de telefonia celular en mexico</h2>
+             </div>
+    <div data-role="content" align="center">
+        <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1>NEXTEL</h1>
+           <div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/nextl.png',1)"><img src="imagenes/nextel1.jpg" width="100%" height="100%" id="Image16"></a> </div>
+         </div>
+       </div>
+         <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1>UNEFON</h1>
+             
+           <div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('une','','imagenes/unefon.png',1)"><img src="imagenes/unefon1.png" width="100%" height="100%" id="une"></a> </div>
+         </div>
+         </div>
+          <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1>IUSACELL</h1>
+       
+           <div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ius','','imagenes/iusacell.png',1)"><img src="imagenes/iusacell1.png" width="100%" height="100%" id="ius"></a> </div>
+         </div>
+         </div>
+         
+         <div data-role="content" align="center">
+        <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+            <h1>MOVISTAR</h1>
+           <div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('movistar','','imagenes/movi.png',1)"><img src="imagenes/movi1.png" width="100%" height="100%" id="movistar"></a> </div>
+         </div>
+       </div>
+       
+            <div data-role="footer" data-theme="a" data-position="fixed">
+            	<h4>Aplicacion Dos,LHR</h4>
+            </div>
+    </div>
+    </div>
+        
+</body>
+</html>
